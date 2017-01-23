@@ -6,7 +6,7 @@ function peco-history-selection() {
   else
     tac="tail -r"
   fi
-  BUFFER=$(history -1 | eval $tac | cut -c 8- | peco --query "$LBUFFER")
+  BUFFER=$(history -1000 | eval $tac | cut -c 8- | peco --query "$LBUFFER")
   CURSOR=$#BUFFER
 }
 
