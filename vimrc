@@ -151,7 +151,7 @@ function! RangeChooser()
   redraw!
 endfunction
 command! -bar RangerChooser call RangeChooser()
-nnoremap <leader>r :<C-U>RangerChooser<CR>
+nnoremap <leader>f :<C-U>RangerChooser<CR>
 
 " ================ NeoComplete ===========
 
